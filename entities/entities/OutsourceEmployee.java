@@ -1,3 +1,5 @@
+package entities;
+
 public class OutsourceEmployee extends Employee{
 
     // ATRIBUTOS
@@ -26,7 +28,7 @@ public class OutsourceEmployee extends Employee{
     // METODOS
     @Override
     public Double payment()  {
-        Double total = super.payment() + additionalCharge;
+        Double total = super.payment() + additionalCharge + (additionalCharge * 0.10);
         return total; 
     }
     // METODOS
